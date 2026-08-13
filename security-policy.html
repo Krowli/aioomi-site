@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security Policy - Planning Poker by Aioomi</title>
+<style>
+  :root{ --ink:#1c2733; --muted:#5a6672; --red:#d13b2c; --bg:#ffffff; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;font-size:16px}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 22px 80px}
+  h1{font-size:30px;margin:0 0 4px}
+  .meta{color:var(--muted);font-size:14px;margin:0}
+  .meta strong{color:var(--ink)}
+  .rule{height:3px;width:56px;background:var(--red);border:0;margin:16px 0 26px}
+  h2{font-size:19px;margin:28px 0 6px}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px;padding-left:20px}
+  li{margin:0 0 6px}
+  a{color:var(--red)}
+  nav{font-size:14px;margin-bottom:24px}
+  nav a{color:var(--muted);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="./index.html">Aioomi</a> / Security Policy</nav>
+<h1>Security Policy</h1>
+<p class="meta"><strong>Application:</strong> Planning Poker, an Atlassian Forge app for Jira Cloud</p>
+<p class="meta"><strong>Provider:</strong> Aioomi &nbsp; <strong>Security contact:</strong> lionmause999@gmail.com</p>
+<p class="meta"><strong>Last updated:</strong> 13 August 2026</p>
+<hr class="rule">
+
+<h2>Overview</h2>
+<p>Planning Poker is built on Atlassian Forge and runs entirely on Atlassian's infrastructure. It does not use external servers and does not send customer data outside Atlassian's cloud.</p>
+
+<h2>Hosting and data storage</h2>
+<ul>
+  <li>All app code (functions and resolvers) runs on Atlassian Forge, hosted by Atlassian.</li>
+  <li>All app data is stored in Atlassian Forge storage. Aioomi does not operate its own servers or databases.</li>
+  <li>Data is encrypted in transit and at rest by the Atlassian Forge platform.</li>
+</ul>
+
+<h2>Access control</h2>
+<ul>
+  <li>The app uses Forge's scoped permissions and Atlassian's standard authentication and authorization for every request.</li>
+  <li>The app accesses only the Jira data needed for estimation (the issues you choose), acting on the user's behalf through Atlassian's API.</li>
+</ul>
+
+<h2>Data sharing</h2>
+<p>The app does not share data with third parties, does not use analytics or advertising trackers, and does not sell data.</p>
+
+<h2>Personal data</h2>
+<ul>
+  <li>The app stores minimal personal data (Atlassian account IDs and optional display names) only to run estimation sessions.</li>
+  <li>The app integrates Atlassian's Personal Data Reporting, so that when an account is closed or changed, the associated data is erased or refreshed.</li>
+</ul>
+
+<h2>Shared responsibility and compliance</h2>
+<p>Security follows Atlassian's shared responsibility model for Forge apps. The app complies with Atlassian's Marketplace security requirements, including TLS 1.2 or higher for all traffic, encryption at rest, and keeping dependencies free of known critical or high vulnerabilities.</p>
+
+<h2>Reporting a vulnerability</h2>
+<p>If you discover a security issue, please email lionmause999@gmail.com. We will respond promptly and work to resolve valid issues.</p>
+
+<h2>Updates</h2>
+<p>We may update this Security Policy over time and will reflect any changes on this page.</p>
+</div>
+</body>
+</html>
