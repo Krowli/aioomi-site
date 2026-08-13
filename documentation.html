@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Guide - Planning Poker by Aioomi</title>
+<style>
+  :root{ --ink:#1c2733; --muted:#5a6672; --red:#d13b2c; --line:#e6e8ec; --bg:#ffffff; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;font-size:16px}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 22px 80px}
+  h1{font-size:30px;margin:0 0 4px}
+  .meta{color:var(--muted);font-size:14px;margin:0}
+  .meta strong{color:var(--ink)}
+  .rule{height:3px;width:56px;background:var(--red);border:0;margin:16px 0 26px}
+  h2{font-size:19px;margin:28px 0 6px}
+  p{margin:0 0 12px}
+  ul,ol{margin:0 0 12px;padding-left:20px}
+  li{margin:0 0 6px}
+  a{color:var(--red)}
+  nav{font-size:14px;margin-bottom:24px}
+  nav a{color:var(--muted);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="./index.html">Aioomi</a> / User Guide</nav>
+<h1>Sketchbook Planning Poker - User Guide</h1>
+<p class="meta"><strong>App:</strong> Planning Poker for Jira Cloud &nbsp; <strong>Provider:</strong> Aioomi</p>
+<p class="meta"><strong>Support:</strong> lionmause999@gmail.com</p>
+<hr class="rule">
+
+<h2>What it is</h2>
+<p>Planning Poker is a real-time estimation tool for Jira Cloud. Your team votes on story points with cards, reveals together, and the app writes the agreed estimate back to the Jira issue. Its distinctive feature is per-team estimation: split the room into subgroups so each team estimates its own part of the work, and the results are summed into one honest total.</p>
+
+<h2>Getting started</h2>
+<ol>
+  <li>Open Planning Poker from the Jira Apps menu in the top navigation, or from the Planning Poker panel on any Jira issue.</li>
+  <li>On first use, open Settings (the gear icon) to pick your hand-drawn character and your display name. Both are optional.</li>
+</ol>
+
+<h2>Creating a room</h2>
+<ol>
+  <li>In the lobby, type a room name and click Create room.</li>
+  <li>You become the room host, marked with a star. The host controls the round.</li>
+</ol>
+
+<h2>Setting up the room</h2>
+<p>In room setup you can configure:</p>
+<ul>
+  <li>Card deck: the values people vote with. Numbers count toward the average; special cards such as "?" and coffee have no value.</li>
+  <li>Subgroups (teams): add teams such as Front-end, Back-end, and QA. Leave this empty for one shared group.</li>
+  <li>Issue queue: search your Jira issues by key or name and add the ones you want to estimate.</li>
+  <li>Where to save results: post a comment on the issue and/or write the total to a numeric field (Story Points by default).</li>
+</ul>
+
+<h2>Running a round</h2>
+<ol>
+  <li>The host clicks Start estimation.</li>
+  <li>Everyone picks a card. Votes stay hidden.</li>
+  <li>The host clicks Reveal cards.</li>
+  <li>Each team's average is shown, and the team averages are summed into one total for the issue.</li>
+  <li>The host clicks Write to Jira to save the result and move to the next issue.</li>
+</ol>
+
+<h2>Per-team estimation</h2>
+<p>When you use subgroups, each member votes only for their own team. The app averages each team's votes, then sums the team averages into a single total for the issue. Special cards with no value are excluded from the average.</p>
+
+<h2>Who votes this round</h2>
+<p>With two or more teams, the host can choose who votes: everyone, or a specific team.</p>
+
+<h2>Round history</h2>
+<p>Every finished round is saved per room. Open History to see who voted what, grouped by team, together with the totals.</p>
+
+<h2>Languages</h2>
+<p>The interface is available in English and Polish. Switch languages with the language buttons in the top bar.</p>
+
+<h2>Privacy and data</h2>
+<p>The app runs entirely on Atlassian and does not use external servers. See the <a href="./privacy-policy.html">privacy policy</a> for details.</p>
+
+<h2>Support</h2>
+<p>If you have any questions or need help, contact lionmause999@gmail.com.</p>
+</div>
+</body>
+</html>
